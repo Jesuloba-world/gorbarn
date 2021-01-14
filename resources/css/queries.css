@@ -1,0 +1,141 @@
+/* tablet landscape - 1200px */
+@media only screen and (max-width: 75em) {
+	html {
+		font-size: 56.5%;
+	}
+}
+
+/* tablet portrait - 900px */
+@media only screen and (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+
+	.main__area {
+		padding: 0;
+	}
+
+	.nav_bar {
+		padding: 0 5%;
+	}
+
+	.hero {
+		height: 55vw;
+	}
+
+	.recent {
+		padding: 3rem 5%;
+	}
+
+	.recent__items {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 3rem;
+		row-gap: 3rem;
+	}
+
+	.item {
+		grid-template-rows: 25rem auto;
+	}
+
+	.more {
+		grid-column: span 2;
+	}
+
+	.middle {
+		height: 55vw;
+		padding-left: 5%;
+	}
+
+	.middle__message__container {
+		align-items: flex-start;
+	}
+
+	.other {
+		padding: 0 5%;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 0;
+		row-gap: 3rem;
+	}
+}
+
+/* phone - 600px */
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 50%;
+	}
+
+	.hero {
+		padding: 0 5%;
+		height: 120vw;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.hero__image__container {
+		grid-row: 1 / 2;
+	}
+
+	.hero__image {
+		background-color: #fff;
+		height: 100%;
+		text-align: center;
+	}
+
+	.hero__message {
+		width: 100%;
+		text-align: center;
+	}
+
+	.item {
+		grid-template-rows: 20rem auto;
+	}
+
+	.middle {
+		padding: 5% 5%;
+		height: 110vw;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.middle__image__container {
+		grid-row: 1 / 2;
+	}
+
+	.middle__image {
+		background-color: #fff;
+		height: 100%;
+		text-align: center;
+	}
+
+	.middle__message {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer__container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footer__section__1 {
+		grid-column: 1 / 3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1rem 0;
+	}
+
+	.footer__section__1 form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+	}
+}
+
+/* big desktop - 1800px and above */
+@media only screen and (min-width: 112.5em) {
+	html {
+		font-size: 75%;
+	}
+}
